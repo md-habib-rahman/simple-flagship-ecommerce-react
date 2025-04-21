@@ -5,7 +5,7 @@ import { MdBookmarkAdd } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="navbar p-0 bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm mx-auto px-8 md:px-16 lg:px-32 xl:px-64">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +31,7 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                className={({ isActive }) => isActive && "bg-amber-200"}
+                className={({ isActive }) => (isActive ? "bg-amber-200" : "")}
                 to="/"
               >
                 Home
@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                className={({ isActive }) => isActive && "bg-amber-200"}
+                className={({ isActive }) => (isActive ? "bg-amber-200" : "")}
                 to="/about"
               >
                 About
@@ -47,7 +47,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                className={({ isActive }) => isActive && "bg-amber-200"}
+                className={({ isActive }) => (isActive ? "bg-amber-200" : "")}
                 to="/cart"
               >
                 <FaCartShopping size={20} />
@@ -55,7 +55,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                className={({ isActive }) => isActive && "bg-amber-200"}
+                className={({ isActive }) => (isActive ? "bg-amber-200" : "")}
                 to="/favourites"
               >
                 <MdBookmarkAdd size={20} />
@@ -72,7 +72,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           <li>
             <NavLink
-              className={({ isActive }) => isActive && "bg-amber-200"}
+              className={({ isActive }) => (isActive ? "bg-amber-200" : "")}
               to="/"
             >
               Home
@@ -80,7 +80,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className={({ isActive }) => isActive && "bg-amber-200"}
+              className={({ isActive }) => (isActive ? "bg-amber-200" : "")}
               to="/about"
             >
               About
@@ -88,7 +88,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className={({ isActive }) => isActive && "bg-amber-200"}
+              className={({ isActive }) => (isActive ? "bg-amber-200" : "")}
               to="/cart"
             >
               <FaCartShopping size={20} />
@@ -96,7 +96,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              className={({ isActive }) => isActive && "bg-amber-200"}
+              className={({ isActive }) => (isActive ? "bg-amber-200" : "")}
               to="/favourites"
             >
               <MdBookmarkAdd size={20} />
